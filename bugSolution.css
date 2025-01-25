@@ -1,0 +1,16 @@
+/* Correct usage of calc() demonstrating proper operator precedence and unit handling */
+.element {
+  width: calc(100% - 20px);
+  /* Correct: space between operator and value */
+  height: calc( (100vh - 100px) / 2 );
+  /* Correct: parenthesis for complex calculations and spaces */
+}
+.anotherElement {
+  margin-left: calc( 50% - 50px );
+  /* Correct: space between operator and value */
+}
+/*Example of incorrect calc usage */
+/*.incorrectElement {
+  width: calc(100%-20px); /* Incorrect: missing space */
+  height: calc((100vh-100px)/2); /* Incorrect: missing spaces and may cause problems */
+}*/
